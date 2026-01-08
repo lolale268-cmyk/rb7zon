@@ -29,7 +29,7 @@
             "id": "squar_photo_bg_image_size",
             "type": "items",
             "format": "dropdown-list",
-            "label": "طريقة عرض الصور في قسم قائمة عناصر ",
+            "label": "طريقة عرض الصور في قسم قائمة عناصر",
             "description": null,
             "labelHTML": null,
             "icon": "sicon-list",
@@ -54,6 +54,31 @@
             ],
             "source": "Manual",
             "required": true
+        },
+        {
+            "id": "title",
+            "type": "static",
+            "format": "title",
+            "label": "Title",
+            "value": null,
+            "variant": "h1",
+            "icon": "sicon-format-text"
+        },
+        {
+            "id": "description",
+            "type": "static",
+            "format": "description",
+            "label": "Description",
+            "value": null,
+            "variant": "h1",
+            "icon": "sicon-format-size"
+        },
+        {
+            "id": "line",
+            "type": "static",
+            "format": "line",
+            "label": "Line",
+            "icon": "sicon-minus"
         },
         {
             "type": "boolean",
@@ -81,7 +106,7 @@
             "type": "static",
             "format": "title",
             "id": "static-label2",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أعلى الصفحة</h6></div>",
+            "value": "<div class='rounded-lg' ><h6 > خيارات أعلى الصفحة</h6></div>",
             "variant": "h6"
         },
         {
@@ -137,7 +162,7 @@
             "type": "static",
             "format": "title",
             "id": "static-label4",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات أسفل الصفحة</h6></div>",
+            "value": "<div class='rounded-lg' ><h6 > خيارات أسفل الصفحة</h6></div>",
             "variant": "h6"
         },
         {
@@ -160,7 +185,7 @@
             "type": "static",
             "format": "title",
             "id": "static-label6",
-            "value": "<div class='rounded-lg' style='background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;'><h6 style='color: #ffffff;font-size: 15px; font-weight: bold;'> خيارات صفحة المنتج</h6></div>",
+            "value": "<div class='rounded-lg' ><h6 > خيارات صفحة المنتج</h6></div>",
             "variant": "h6"
         },
         {
@@ -236,6 +261,101 @@
             "required": false,
             "value": false,
             "selected": false
+        },
+        {
+            "id": "radio_list",
+            "type": "items",
+            "format": "radio-list",
+            "label": "Radio List",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-list",
+            "selected": [],
+            "options": [],
+            "source": "Manual",
+            "required": false
+        },
+        {
+            "id": "checkbox_list",
+            "type": "items",
+            "format": "checkbox-list",
+            "label": "Checkbox List",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-list-check",
+            "selected": [],
+            "options": [],
+            "source": "Manual",
+            "multichoice": true,
+            "required": false
+        },
+        {
+            "id": "dropdown_list",
+            "type": "items",
+            "format": "dropdown-list",
+            "label": "Dropdown List",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-keyboard_arrow_down",
+            "selected": [],
+            "options": [],
+            "source": "Manual",
+            "multichoice": true,
+            "searchable": true,
+            "required": false
+        },
+        {
+            "id": "collection",
+            "type": "collection",
+            "format": "collection",
+            "label": "Collection",
+            "description": null,
+            "labelHTML": null,
+            "item_label": null,
+            "icon": "sicon-list-add",
+            "fields": [],
+            "value": [],
+            "minLength": 1,
+            "maxLength": 5
+        },
+        {
+            "id": "checkbox",
+            "type": "boolean",
+            "format": "checkbox",
+            "label": "Checkbox",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-check-square",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "switch",
+            "type": "boolean",
+            "format": "switch",
+            "label": "Switch",
+            "description": null,
+            "labelHTML": null,
+            "icon": "sicon-toggle-off",
+            "value": true,
+            "selected": false,
+            "required": false
+        },
+        {
+            "id": "integer",
+            "type": "number",
+            "format": "integer",
+            "inputType": "number",
+            "label": "Integer",
+            "description": null,
+            "labelHTML": null,
+            "placeholder": "Input an integer number between 5 and 50.",
+            "icon": "sicon-hashtag",
+            "value": null,
+            "required": false,
+            "minimum": 0,
+            "maximum": 50
         }
     ],
     "components": [
